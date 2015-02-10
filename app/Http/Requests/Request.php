@@ -1,4 +1,4 @@
-<?php namespace Predict\Http\Requests;
+<?php namespace RecPoc\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

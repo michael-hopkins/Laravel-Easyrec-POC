@@ -1,4 +1,4 @@
-<?php namespace Predict\Commands;
+<?php namespace RecPoc\Commands;
 
 abstract class Command {
 

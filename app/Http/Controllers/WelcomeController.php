@@ -1,4 +1,4 @@
-<?php namespace Predict\Http\Controllers;
+<?php namespace RecPoc\Http\Controllers;
 
 class WelcomeController extends Controller {
 

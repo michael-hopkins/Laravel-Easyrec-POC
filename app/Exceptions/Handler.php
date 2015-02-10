@@ -1,4 +1,4 @@
-<?php namespace Predict\Exceptions;
+<?php namespace RecPoc\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

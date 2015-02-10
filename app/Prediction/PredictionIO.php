@@ -1,4 +1,4 @@
-<?php namespace Predict\Prediction;
+<?php namespace RecPoc\Prediction;
 
 use PredictionIO\PredictionIOClient;
 

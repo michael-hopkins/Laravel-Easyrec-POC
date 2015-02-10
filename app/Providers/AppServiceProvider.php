@@ -1,4 +1,4 @@
-<?php namespace Predict\Providers;
+<?php namespace RecPoc\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider {
 	{
 		$this->app->bind(
 			'Illuminate\Contracts\Auth\Registrar',
-			'Predict\Services\Registrar'
+			'RecPoc\Services\Registrar'
 		);
 	}
 

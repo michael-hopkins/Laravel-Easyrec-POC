@@ -1,4 +1,4 @@
-<?php namespace Predict\Console\Commands;
+<?php namespace RecPoc\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

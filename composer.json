@@ -9,7 +9,7 @@
   "type": "project",
   "require": {
     "laravel/framework": "5.0.*",
-    "predictionio/predictionio": "<0.8",
+    "antoineaugusti/laravel-easyrec":"v1.0-RC1",
     "barryvdh/laravel-ide-helper": "~2.0"
   },
   "require-dev": {
@@ -21,7 +21,7 @@
       "database"
     ],
     "psr-4": {
-      "Predict\\": "app/"
+      "RecPoc\\": "app/"
     }
   },
   "autoload-dev": {

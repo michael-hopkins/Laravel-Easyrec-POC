@@ -1,4 +1,4 @@
-<?php namespace Predict\Prediction;
+<?php namespace RecPoc\Prediction;
 
 use Illuminate\Support\Facades\Facade as IlluminateFacade;
 

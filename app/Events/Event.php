@@ -1,4 +1,4 @@
-<?php namespace Predict\Events;
+<?php namespace RecPoc\Events;
 
 abstract class Event {
 

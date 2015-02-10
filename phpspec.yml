@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: Predict
-        psr4_prefix: Predict
+        namespace: RecPoc
+        psr4_prefix: RecPoc
         src_path: app

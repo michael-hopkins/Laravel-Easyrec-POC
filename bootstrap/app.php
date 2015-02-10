@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
 	'Illuminate\Contracts\Http\Kernel',
-	'Predict\Http\Kernel'
+	'RecPoc\Http\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Console\Kernel',
-	'Predict\Console\Kernel'
+	'RecPoc\Console\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Debug\ExceptionHandler',
-	'Predict\Exceptions\Handler'
+	'RecPoc\Exceptions\Handler'
 );
 
 /*

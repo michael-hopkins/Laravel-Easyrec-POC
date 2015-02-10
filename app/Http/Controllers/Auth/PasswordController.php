@@ -1,6 +1,6 @@
-<?php namespace Predict\Http\Controllers\Auth;
+<?php namespace RecPoc\Http\Controllers\Auth;
 
-use Predict\Http\Controllers\Controller;
+use RecPoc\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Foundation\Auth\ResetsPasswords;

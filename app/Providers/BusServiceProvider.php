@@ -1,4 +1,4 @@
-<?php namespace Predict\Providers;
+<?php namespace RecPoc\Providers;
 
 use Illuminate\Bus\Dispatcher;
 use Illuminate\Support\ServiceProvider;
@@ -16,7 +16,7 @@ class BusServiceProvider extends ServiceProvider {
 		$dispatcher->mapUsing(function($command)
 		{
 			return Dispatcher::simpleMapping(
-				$command, 'Predict\Commands', 'Predict\Handlers\Commands'
+				$command, 'RecPoc\Commands', 'RecPoc\Handlers\Commands'
 			);
 		});
 	}

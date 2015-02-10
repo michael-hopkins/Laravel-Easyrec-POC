@@ -139,19 +139,20 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'Predict\Providers\AppServiceProvider',
-		'Predict\Providers\BusServiceProvider',
-		'Predict\Providers\ConfigServiceProvider',
-		'Predict\Providers\EventServiceProvider',
-		'Predict\Providers\RouteServiceProvider',
+		'RecPoc\Providers\AppServiceProvider',
+		'RecPoc\Providers\BusServiceProvider',
+		'RecPoc\Providers\ConfigServiceProvider',
+		'RecPoc\Providers\EventServiceProvider',
+		'RecPoc\Providers\RouteServiceProvider',
 
         /*
          * Package Service Providers
          */
 
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-        'Predict\Providers\PredictionServiceProvider',
-	],
+        'Antoineaugusti\LaravelEasyrec\LaravelEasyrecServiceProvider',
+
+    ],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -198,8 +199,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
-
-        'Predict'   => 'Predict\Prediction\Facade',
+        'Easyrec' => 'Antoineaugusti\LaravelEasyrec\Facades\LaravelEasyrec'
 
 	],
 

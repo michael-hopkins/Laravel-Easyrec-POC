@@ -1,4 +1,4 @@
-<?php namespace Predict\Http;
+<?php namespace RecPoc\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -15,7 +15,7 @@ class Kernel extends HttpKernel {
 		'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
 		'Illuminate\Session\Middleware\StartSession',
 		'Illuminate\View\Middleware\ShareErrorsFromSession',
-		'Predict\Http\Middleware\VerifyCsrfToken',
+		'RecPoc\Http\Middleware\VerifyCsrfToken',
 	];
 
 	/**
@@ -24,9 +24,9 @@ class Kernel extends HttpKernel {
 	 * @var array
 	 */
 	protected $routeMiddleware = [
-		'auth' => 'Predict\Http\Middleware\Authenticate',
+		'auth' => 'RecPoc\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
-		'guest' => 'Predict\Http\Middleware\RedirectIfAuthenticated',
+		'guest' => 'RecPoc\Http\Middleware\RedirectIfAuthenticated',
 	];
 
 }

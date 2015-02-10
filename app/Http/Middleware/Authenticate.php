@@ -1,4 +1,4 @@
-<?php namespace Predict\Http\Middleware;
+<?php namespace RecPoc\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

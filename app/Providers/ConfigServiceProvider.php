@@ -1,4 +1,4 @@
-<?php namespace Predict\Providers;
+<?php namespace RecPoc\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

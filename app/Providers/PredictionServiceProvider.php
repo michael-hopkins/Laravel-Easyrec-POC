@@ -1,8 +1,8 @@
-<?php namespace Predict\Providers;
+<?php namespace RecPoc\Providers;
 
 use Config;
 use Illuminate\Support\ServiceProvider;
-use Predict\Prediction\PredictionIO;
+use RecPoc\Prediction\PredictionIO;
 
 class PredictionServiceProvider extends ServiceProvider {
 

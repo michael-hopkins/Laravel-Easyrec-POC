@@ -1,6 +1,6 @@
-<?php namespace Predict\Services;
+<?php namespace RecPoc\Services;
 
-use Predict\User;
+use RecPoc\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 
