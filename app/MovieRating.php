@@ -20,8 +20,9 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\RecPoc\Rating whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\RecPoc\Rating whereUpdatedAt($value)
  */
-class Rating extends Model {
+class MovieRating extends Model {
 
+    protected $table = 'movie_ratings';
 	protected $guarded = ['id'];
 
     public function user(){

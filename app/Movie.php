@@ -20,8 +20,8 @@ class Movie extends Model {
 
 	protected $guarded = ['id'];
 
-    public function ratings(){
-        return $this->hasMany(Rating::class);
+    public function movieRatings(){
+        return $this->hasMany(MovieRating::class);
     }
 
 }

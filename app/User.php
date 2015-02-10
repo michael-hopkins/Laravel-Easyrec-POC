@@ -34,8 +34,12 @@ class User extends Model implements AuthenticatableContract {
      */
     protected $hidden = ['password', 'remember_token'];
 
-    public function ratings(){
-        return $this->hasMany(Rating::class);
+    public function movieRatings(){
+        return $this->hasMany(MovieRating::class);
+    }
+
+    public function bookRatings(){
+        return $this->hasMany(BookRating::class);
     }
 
 }
