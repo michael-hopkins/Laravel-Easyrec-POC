@@ -12,7 +12,7 @@ class CreateBooksTable extends Migration {
      */
     public function up()
     {
-        Schema::create('movies', function(Blueprint $table)
+        Schema::create('books', function(Blueprint $table)
         {
             $table->string('ISBN');
             $table->string('Book-Title')->nullable();

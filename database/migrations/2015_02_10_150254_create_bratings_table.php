@@ -3,11 +3,11 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBookRatingsTable extends Migration {
+class CreateBratingsTable extends Migration {
 
     public function up()
     {
-        Schema::create('book_ratings', function(Blueprint $table) {
+        Schema::create('bratings', function(Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id')->references('id')->on('users');
             $table->unsignedInteger('book_id')->references('id')->on('books');
@@ -18,7 +18,7 @@ class CreateBookRatingsTable extends Migration {
 
     public function down()
     {
-        Schema::drop('book_ratings');
+        Schema::drop('bratings');
     }
 
 }
