@@ -57,6 +57,7 @@ return array(
     'extra' => array(
         'Eloquent' => array('Illuminate\Database\Eloquent\Builder', 'Illuminate\Database\Query\Builder'),
         'Session' => array('Illuminate\Session\Store'),
+        'Easyrec' => 'Antoineaugusti\LaravelEasyrec\Easyrec'
     ),
 
     'magic' => array(
@@ -83,7 +84,7 @@ return array(
     */
     
     'interfaces' => array(
-        '\Illuminate\Auth\UserInterface' => config('auth.model', '\RecPoc\User'),
+        '\Illuminate\Auth\UserInterface' => config('auth.model', 'User'),
     )
 
 );

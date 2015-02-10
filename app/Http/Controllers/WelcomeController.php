@@ -3,6 +3,7 @@
 use Easyrec;
 use Auth;
 use RecPoc\Movie;
+use RecPoc\Rating;
 use RecPoc\User;
 
 class WelcomeController extends Controller {
@@ -35,22 +36,21 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('welcome');
+        echo "<pre>";
+        print_r(Easyrec::bestRatedItems(16));
+        echo "</pre>";
 	}
 
-    public function import(){
-        $return = [];
-        $users = \RecPoc\User::with(['ratings'])->get();
-        foreach($users as $user){
-            echo $user->id;
-            foreach($user->ratings as $rating){
-                $movie = \RecPoc\Movie::whereId($rating->movie_id)->first();
-                $movie_id = $movie->movie_id;
-                $r = $rating->rating;
-                $user_id = $user->id;
-                echo "rating - ".$r." | movie - ".$movie_id."\n";
-                Easyrec::rate($movie_id, $r, $user_id.$movie_id, '/'.$user_id.$movie_id, $user_id, $movie_id.".jpg", null, null, \Hash::make($user_id));
-            }
+    public function import()
+    {
+        $ratings = Rating::with(['movie'])->get();
+        foreach ($ratings as $rating) {
+            $movie = $rating->movie;
+            $movie_id = $movie->id;
+            $r = $rating->rating;
+            $user_id = $rating->user_id;
+            $session_id = $user_id . str_random(10) . $movie_id;
+            Easyrec::rate($movie_id, $r, $movie->name, '/movies/'.$movie_id, $user_id, $movie_id.".jpg", null, null, $session_id);
         }
     }
 

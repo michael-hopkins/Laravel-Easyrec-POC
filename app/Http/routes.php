@@ -16,9 +16,7 @@ use RecPoc\Movie;
 use RecPoc\Rating;
 use RecPoc\User;
 
-Route::get('/', function(){
-    return 'hello';
-});
+Route::get('/','WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
