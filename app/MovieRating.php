@@ -22,7 +22,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class MovieRating extends Model {
 
-    protected $table = 'mratings';
+    protected $table = 'ratings';
 	protected $guarded = ['id'];
 
     public function user(){

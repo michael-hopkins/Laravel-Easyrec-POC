@@ -43,14 +43,14 @@ class WelcomeController extends Controller {
 
     public function import()
     {
-        $ratings = Rating::with(['movie'])->get();
+        $ratings = \RecPoc\MovieRating::with(['movie'])->get();
         foreach ($ratings as $rating) {
             $movie = $rating->movie;
             $movie_id = $movie->id;
             $r = $rating->rating;
             $user_id = $rating->user_id;
             $session_id = $user_id . str_random(10) . $movie_id;
-            Easyrec::rate($movie_id, $r, $movie->name, '/movies/'.$movie_id, $user_id, $movie_id.".jpg", null, null, $session_id);
+            \Easyrec::rate($movie_id, $r, $movie->name, '/movies/'.$movie_id, $user_id, $movie_id.".jpg", null, null, $session_id);
         }
     }
 
