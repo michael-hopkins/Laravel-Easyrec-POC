@@ -11,7 +11,14 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+use Antoineaugusti\LaravelEasyrec\Easyrec;
+use RecPoc\Movie;
+use RecPoc\Rating;
+use RecPoc\User;
+
+Route::get('/', function(){
+    return 'hello';
+});
 
 Route::get('home', 'HomeController@index');
 
@@ -19,3 +26,5 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('/import','WelcomeController@import');

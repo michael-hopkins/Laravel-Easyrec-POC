@@ -12,11 +12,13 @@ class CreateRatingsTable extends Migration {
      */
     public function up()
     {
-        Schema::create('users', function(Blueprint $table)
+        Schema::create('ratings', function(Blueprint $table)
         {
             $table->increments('id');
             $table->unsignedInteger('user_id')->references('id')->on('users');
             $table->unsignedInteger('movie_id')->references('id')->on('movies');
+            $table->integer('rating')->nullable();
+            $table->timestamps();
         });
     }
 

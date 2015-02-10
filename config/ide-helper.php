@@ -83,7 +83,7 @@ return array(
     */
     
     'interfaces' => array(
-        '\Illuminate\Auth\UserInterface' => config('auth.model', 'User'),
+        '\Illuminate\Auth\UserInterface' => config('auth.model', '\RecPoc\User'),
     )
 
 );
